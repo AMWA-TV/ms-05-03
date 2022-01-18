@@ -1,0 +1,10 @@
+amwa_id: NC-BLOCK-SPECS
+url: https://specs.amwa.tv/nmos-control-block-specs
+name: AMWA NMOS Control Block Specs
+status: Work In Progress
+repo_name: nmos-control-block-specs
+alt_repo_name: nmos-control-block-specs
+repo_url: https://github.com/AMWA-TV/nmos-control-block-specs
+releases:
+default_branch: main
+show_in_index: false
