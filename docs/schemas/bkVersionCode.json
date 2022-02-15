@@ -1,0 +1,7 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "A blockSpec version designator which follow semantic versioning",
+    "title": "Version code",
+    "type": "string",
+    "pattern": "^(\\d+\\.)?(\\d+\\.)?(\\*|\\d+)$"
+}

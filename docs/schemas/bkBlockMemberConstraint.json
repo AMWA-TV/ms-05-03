@@ -1,0 +1,47 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Constraint specification for a block member's property",
+   "title": "Block member constraint",
+   "properties": {
+      "rolePath": {
+         "$ref": "bkRolePath.json"
+      },
+      "propertyId": {
+         "description": "Property identifier",
+         "type": "object",
+         "properties": {
+            "level": {
+               "type": "number"
+            },
+            "index": {
+               "type": "number"
+            }
+         },
+         "required": [
+            "level",
+            "index"
+         ]
+      }
+   },
+   "oneOf": [
+      {
+         "$ref": "bkBlockMemberConstraint_Object.json"
+      },
+      {
+         "$ref": "bkBlockMemberConstraint_Number.json"
+      },
+      {
+         "$ref": "bkBlockMemberConstraint_String.json"
+      },
+      {
+         "$ref": "bkBlockMemberConstraint_Boolean.json"
+      },
+      {
+         "$ref": "bkBlockMemberConstraint_Enum.json"
+      }
+   ],
+   "required": [
+      "propertyId"
+   ]
+}

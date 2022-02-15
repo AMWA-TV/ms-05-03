@@ -1,0 +1,20 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "An option value of a constraint item enum",
+   "title": "Enum option value",
+   "properties": {
+      "ordinal": {
+         "type": "integer",
+         "description": "Numeric value associated with the enum option"
+      },
+      "label": {
+         "type": "string",
+         "description": "Label of the enum option"
+      }
+   },
+   "required": [
+      "ordinal",
+      "label"
+   ]
+}

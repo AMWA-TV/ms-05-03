@@ -1,0 +1,22 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Blockspecs file definition",
+   "title": "Blockspecs file",
+   "properties": {
+      "libraries": {
+         "description": "Library directory.  Array of mappings from library ID to URL. If a library ID is not listed here, it is assumed that the blockspecs that cite it are in the local (i.e. this) file.",
+         "type": "array",
+         "items": {
+            "$ref": "bkLibDirectoryEntry.json"
+         }
+      },
+      "blockspecs": {
+         "description": "The blockspec(s)",
+         "type": "array",
+         "items": {
+            "$ref": "bkBlockspec.json"
+         }
+      }
+   }
+}

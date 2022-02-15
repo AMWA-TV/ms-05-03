@@ -1,0 +1,20 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "A blockSpec signal-path descriptor",
+   "title": "BlockSpec signal-path",
+   "properties": {
+      "role": {
+         "description": "Role of port in the object that owns it. Value is unique within the owning object.",
+         "$ref": "bkName.json"
+      },
+      "source": {
+         "description": "Role of source port",
+         "$ref": "bkName.json"
+      },
+      "sink": {
+         "description": "Role of sink port",
+         "$ref": "bkName.json"
+      }
+   }
+}

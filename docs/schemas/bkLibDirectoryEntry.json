@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "A library directory entry.  Maps a blockspec library ID to a URL.",
+    "title": "Library directory entry",
+    "properties": {
+        "reference": {
+            "description": "Identifier of library in this blockspec file.",
+            "$ref": "bkName.json"
+        },
+        "description": {
+            "description": "URL of library",
+            "type": "string",
+            "pattern": "https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()!@:%_\\+.~#?&\\/\\/=]*)"
+        }
+    }
+}

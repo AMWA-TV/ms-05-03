@@ -1,0 +1,60 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Block specification",
+   "title": "Blockspec",
+   "properties": {
+      "specId": {
+         "description": "A blockSpec ID",
+         "type": "string"
+      },
+      "specVersion": {
+         "description": "Version number of this blockspec",
+         "$ref": "bkVersionCode.json"
+      },
+      "parentSpecId": {
+         "description": "Global ID of this blockspec's parent",
+         "type": "string"
+      },
+      "parentSpecVersion": {
+         "description": "Version number of this blockspec's parent",
+         "$ref": "bkVersionCode.json"
+      },
+      "lockable": {
+         "description": "TRUE if and only if block may be locked by controllers.",
+         "type": "boolean"
+      },
+      "isDynamic": {
+         "description": "TRUE if and only if controllers may add and delete objects from this block",
+         "type": "boolean"
+      },
+      "ports": {
+         "description": "List of this block's bkPorts, i.e. signal-path endpoints",
+         "type": "array",
+         "items": {
+            "$ref": "bkPort.json"
+         }
+      },
+      "signalPaths": {
+         "description": "List of this block's bkPorts, i.e. signal-path endpoints",
+         "type": "array",
+         "items": {
+            "$ref": "bkSignalPath.json"
+         }
+      },
+      "members": {
+         "description": "One array entry for each control object in the block",
+         "type": "array",
+         "items": {
+            "oneOf": [
+               {
+                  "$ref": "bkBlockMemberGeneric.json"
+               },
+               {
+                  "$ref": "bkBlockMemberBlock.json"
+               }
+            ]
+         }
+      }
+   }
+}

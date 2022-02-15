@@ -1,0 +1,11 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Constraint specification for a property of type object",
+   "title": "Object constraint",
+   "properties": {
+      "value": {
+         "type": "object"
+      }
+   }
+}

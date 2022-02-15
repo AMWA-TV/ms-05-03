@@ -1,0 +1,26 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Block member that is a block, i.e. an instance of ncaBlock or a descendant of ncaBlock.",
+   "title": "Block member of type block",
+   "additionalProperties": false,
+   "$ref": "bkBlockMemberGeneric.json",
+   "properties": {
+      "specId": {
+         "description": "ID of included blockspec",
+         "type": "string"
+      },
+      "specVersion": {
+         "description": "Version of included blockspec",
+         "$ref": "bkVersionCode.json"
+      },
+      "specLibraryId": {
+         "description": "Library ID of included blockspec, if any",
+         "$ref": "bkName.json"
+      }
+   },
+   "required": [
+      "specId",
+      "specVersion"
+   ]
+}

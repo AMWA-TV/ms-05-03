@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "A blockSpec Port descriptor",
+    "title": "BlockSpec Port",
+    "properties": {
+        "role": {
+            "description": "Role of port in the object that owns it.  Value is unique within the owning object.",
+            "$ref": "bkName.json"
+        },
+        "direction": {
+            "description": "Input (sink) or output (source) port",
+            "enum": [
+                "undefined",
+                "input",
+                "output"
+            ]
+        },
+        "clockPath": {
+            "description": "Path to this port's ncaMediaClock object, if any",
+            "$ref": "bkRolePath.json"
+        }
+    }
+}

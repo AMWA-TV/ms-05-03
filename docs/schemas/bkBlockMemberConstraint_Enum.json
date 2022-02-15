@@ -1,0 +1,19 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Constraint specification for a property of type enum",
+   "title": "Enum constraint",
+   "properties": {
+      "value": {
+         "type": "object",
+         "$ref": "bkBlockMemberConstraintEnumOption.json"
+      },
+      "possibleValues": {
+         "description": "Array of all the possible enum values.",
+         "type": "array",
+         "items": {
+            "$ref": "bkBlockMemberConstraintEnumOption.json"
+         }
+      }
+   }
+}
