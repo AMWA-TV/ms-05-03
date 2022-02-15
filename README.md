@@ -9,15 +9,15 @@ This repository holds the source for this Specification, part of the family of [
 
 ### What does it do?
 
-- tbc
+Describes the specification for creating NMOS Control Blockspecs.
 
 ### Why does it matter?
 
-- tbc
+Sets out the rules and requirements for creating Blockspec files which can be used by device manufacturers for implementation.
 
 ### How does it work?
 
-- tbc
+Describes a uniform way of specifying block functionality and constraints for standardising feature sets.
 
 <!-- INTRO-END -->
 
