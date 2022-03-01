@@ -1,10 +1,10 @@
-amwa_id: NC-BLOCK-SPECS
-url: https://specs.amwa.tv/nmos-control-block-specs
+amwa_id: MS-05-03
+url: https://specs.amwa.tv/ms-05-03
 name: AMWA NMOS Control Block Specs
 status: Work In Progress
-repo_name: nmos-control-block-specs
+repo_name: ms-05-03
 alt_repo_name: nmos-control-block-specs
-repo_url: https://github.com/AMWA-TV/nmos-control-block-specs
+repo_url: https://github.com/AMWA-TV/ms-05-03
 releases:
 default_branch: main
 show_in_index: false

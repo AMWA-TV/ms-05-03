@@ -1,7 +1,7 @@
-# \[Work In Progress\] AMWA NMOS Control Block Specs
+# \[Work In Progress\] AMWA MS-05-03 NMOS Control Block Specs
 
-[![Lint Status](https://github.com/AMWA-TV/nmos-control-block-specs/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/nmos-control-block-specs/actions?query=workflow%3ALint)
-[![Render Status](https://github.com/AMWA-TV/nmos-control-block-specs/workflows/Render/badge.svg)](https://github.com/AMWA-TV/nmos-control-block-specs/actions?query=workflow%3ARender)
+[![Lint Status](https://github.com/AMWA-TV/ms-05-03/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/ms-05-03/actions?query=workflow%3ALint)
+[![Render Status](https://github.com/AMWA-TV/ms-05-03/workflows/Render/badge.svg)](https://github.com/AMWA-TV/ms-05-03/actions?query=workflow%3ARender)
 
 This repository holds the source for this Specification, part of the family of [Networked Media Open Specifications](https://specs.amwa.tv/nmos) from the [Advanced Media Workflow Association](https://amwa.tv)
 

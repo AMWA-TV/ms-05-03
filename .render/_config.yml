@@ -3,14 +3,14 @@ theme: jekyll-theme-primer
 spec_server: specs.amwa.tv
 
 # AMWA ID
-amwa_id: NC-BLOCK-SPECS
+amwa_id: MS-05-03
 
 # Base name for site (typically lower case version of AMWA ID, or the repo name)
-baseurl: /nmos-control-block-specs
+baseurl: /ms-05-03
 
 # Which release or branch appears in header links and on the home page
-default_tree: branches/main # alternatively e.g. releases/v1.0
+default_tree: branches/v1.0-dev # alternatively e.g. releases/v1.0
 
 # Regex patterns of releases and branches to show
-show_releases:
-show_branches: main|^publish-
+show_releases: ^v[0-9]+\.[0-9]+$|^v[0-9]+\.[0-9]+\.[0-9]+$
+show_branches: ^v[0-9]+\.[0-9]+-dev$|^v[0-9]+\.[0-9]+\.x$|^publish-
