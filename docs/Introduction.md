@@ -12,5 +12,5 @@ It is anticipated that, over time, organizations will collect blockspecs into li
 
 This document relies on previous familiarity with the following existing documents:
 
-* NC-Architecture (NMOS Control Architecture)
-* NC-Framework (NMOS Control Framework)
+- MS-05-01 (NMOS Control Architecture Framework)
+- MS-05-02 (NMOS Control Framework)
