@@ -1,7 +1,7 @@
 {
    "$schema": "http://json-schema.org/draft-04/schema#",
    "type": "object",
-   "description": "Block member that is a block, i.e. an instance of ncaBlock or a descendant of ncaBlock.",
+   "description": "Block member that is a block, i.e. an instance of ncBlock or a descendant of ncBlock.",
    "title": "Block member of type block",
    "additionalProperties": false,
    "$ref": "bkBlockMemberGeneric.json",

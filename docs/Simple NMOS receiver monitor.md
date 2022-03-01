@@ -1,6 +1,6 @@
 # Simple NMOS receiver monitor
 
-Here is a blockspec for a simple NMOS receiver monitor.  The block contains only one object, an instance of the `ncaReceiverMonitor` class. In this case, the block doesn't process any media signals, so neither it nor the object it contains has any ports, and there are no signal paths.
+Here is a blockspec for a simple NMOS receiver monitor.  The block contains only one object, an instance of the `ncReceiverMonitor` class. In this case, the block doesn't process any media signals, so neither it nor the object it contains has any ports, and there are no signal paths.
 
 ```json
 {
@@ -12,7 +12,7 @@ Here is a blockspec for a simple NMOS receiver monitor.  The block contains only
         {
             "role": "receiverStatus",
             "classId": [1,4,1,1],
-            "comment": "ncaReceiverMonitor",
+            "comment": "ncReceiverMonitor",
             "classVersion": {"major":1,"minor":0, "patch":0},
             "ports": []
         }

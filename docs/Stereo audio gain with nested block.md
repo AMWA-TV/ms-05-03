@@ -23,7 +23,7 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
                 "role": "stereoGain",
                 "specId": "ChannelGainBlock",
                 "specVersion": 1234,
-                "comment": "ncaBlock",
+                "comment": "ncBlock",
                 "classId": [ 1, 1 ],
                 "classVersion": {
                         "major": 1,
@@ -73,7 +73,7 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
             },
             {
                 "role": "masterGain",
-                "class": "ncaGain",
+                "class": "ncGain",
                 "classId": [ 1, 2, 1, 1 ],
                 "classVersion": {
                         "major": 1,
@@ -257,7 +257,7 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
     "members": [
             {
                 "role": "left",
-                "comment": "ncaGain",
+                "comment": "ncGain",
                 "classId": [ 1, 2, 1, 1 ],
                 "classVersion": 1,
                 "constantOID": true,
@@ -276,7 +276,7 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
                 "role": "right",
                 "classId": [ 1, 2, 1, 1 ],
                 "classVersion": 1,
-                "comment": "ncaGain",
+                "comment": "ncGain",
                 "constantOID": true,
                 "ports": [
                         {

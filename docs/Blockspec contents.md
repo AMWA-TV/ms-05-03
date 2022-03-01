@@ -11,7 +11,7 @@ The structure is:
   * A simple text description of the block.
 
 * Collection property specifications
-  * Block Port collection: List of descriptors of `ncaPorts` belonging to the block, for media signal flows into and out of the block.
+  * Block Port collection: List of descriptors of `ncPorts` belonging to the block, for media signal flows into and out of the block.
   * Signal path collection: List of descriptors of signal paths inside the block
 
 * Member specifications
