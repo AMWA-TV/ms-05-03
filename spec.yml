@@ -6,5 +6,5 @@ repo_name: ms-05-03
 alt_repo_name: nmos-control-block-specs
 repo_url: https://github.com/AMWA-TV/ms-05-03
 releases:
-default_branch: main
-show_in_index: false
+default_branch: v1.0-dev
+show_in_index: true
