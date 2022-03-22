@@ -1,4 +1,4 @@
-# \[Work In Progress\] AMWA MS-05-03 NMOS Control Block Specs
+# \[Work In Progress\] AMWA MS-05-03 NMOS Control Blockspecs
 
 [![Lint Status](https://github.com/AMWA-TV/ms-05-03/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/ms-05-03/actions?query=workflow%3ALint)
 [![Render Status](https://github.com/AMWA-TV/ms-05-03/workflows/Render/badge.svg)](https://github.com/AMWA-TV/ms-05-03/actions?query=workflow%3ARender)

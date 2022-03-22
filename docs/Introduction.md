@@ -1,4 +1,4 @@
-# Introduction
+# AMWA MS-05-03 NMOS Control Blockspecs \[Work In Progress\]
 
 NCA, the NMOS Control Architecture, includes the ability for developers and development support organizations to define standard modules called `blocks` that encapsulate sets of control functions.
 
@@ -12,5 +12,5 @@ It is anticipated that, over time, organizations will collect blockspecs into li
 
 This document relies on previous familiarity with the following existing documents:
 
-- MS-05-01 (NMOS Control Architecture Framework)
-- MS-05-02 (NMOS Control Framework)
+- [AMWA MS-05-01 NMOS Control Architecture Framework](https://specs.amwa.tv/ms-05-01)
+- [AMWA MS-05-02 NMOS Control Framework](https://specs.amwa.tv/ms-05-02)
