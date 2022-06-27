@@ -3,6 +3,7 @@
     "type": "object",
     "description": "A library directory entry.  Maps a blockspec library ID to a URL.",
     "title": "Library directory entry",
+    "$ref": "bkBase.json",
     "properties": {
         "reference": {
             "description": "Identifier of library in this blockspec file.",

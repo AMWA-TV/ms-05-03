@@ -3,10 +3,15 @@
    "type": "object",
    "description": "A blockSpec signal-path descriptor",
    "title": "BlockSpec signal-path",
+   "$ref": "bkBase.json",
    "properties": {
       "role": {
          "description": "Role of port in the object that owns it. Value is unique within the owning object.",
          "$ref": "bkName.json"
+      },
+      "label": {
+         "description": "Optional signal path label.",
+         "type": "string"
       },
       "source": {
          "description": "Role of source port",

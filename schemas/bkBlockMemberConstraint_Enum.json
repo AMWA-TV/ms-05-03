@@ -3,11 +3,8 @@
    "type": "object",
    "description": "Constraint specification for a property of type enum",
    "title": "Enum constraint",
+   "$ref": "bkBase.json",
    "properties": {
-      "value": {
-         "type": "object",
-         "$ref": "bkBlockMemberConstraintEnumOption.json"
-      },
       "possibleValues": {
          "description": "Array of all the possible enum values.",
          "type": "array",

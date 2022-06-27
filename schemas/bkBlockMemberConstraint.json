@@ -26,16 +26,13 @@
    },
    "oneOf": [
       {
-         "$ref": "bkBlockMemberConstraint_Object.json"
+         "$ref": "bkBlockMemberConstraintFixedValue.json"
       },
       {
          "$ref": "bkBlockMemberConstraint_Number.json"
       },
       {
          "$ref": "bkBlockMemberConstraint_String.json"
-      },
-      {
-         "$ref": "bkBlockMemberConstraint_Boolean.json"
       },
       {
          "$ref": "bkBlockMemberConstraint_Enum.json"
