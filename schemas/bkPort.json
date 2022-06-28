@@ -3,6 +3,7 @@
     "type": "object",
     "description": "A blockSpec Port descriptor",
     "title": "BlockSpec Port",
+    "$ref": "bkBase.json",
     "properties": {
         "role": {
             "description": "Role of port in the object that owns it.  Value is unique within the owning object.",

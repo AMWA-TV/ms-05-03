@@ -3,9 +3,14 @@
    "type": "object",
    "description": "Constraint specification for a property of type string",
    "title": "String constraint",
+   "$ref": "bkBase.json",
    "properties": {
-      "value": {
-         "description": "String value.",
+      "maxCharacters": {
+         "description": "Maximum characters allowed.",
+         "type": "number"
+      },
+      "pattern": {
+         "description": "Regex pattern.",
          "type": "string"
       }
    }
