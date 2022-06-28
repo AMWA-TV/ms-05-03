@@ -1,10 +1,7 @@
 # Blockspec contents
 
-The elements of a blockspec are as follows.  Details of these items follow, beginning with **Header data**, below.
-
 The formal specification of the blockspec format is described in JSON schemas. See the JSON Schemas section.
-
-The structure is:
+The elements of a blockspec are as follows:
 
 * Header data
   * Identification of the blockspec and its parent, if any.
