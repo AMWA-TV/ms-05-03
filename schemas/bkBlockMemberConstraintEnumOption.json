@@ -3,18 +3,23 @@
    "type": "object",
    "description": "An option value of a constraint item enum",
    "title": "Enum option value",
+   "$ref": "bkBase.json",
    "properties": {
-      "ordinal": {
+      "index": {
          "type": "integer",
          "description": "Numeric value associated with the enum option"
       },
-      "label": {
+      "name": {
          "type": "string",
-         "description": "Label of the enum option"
+         "description": "Name of the enum option"
+      },
+      "description": {
+         "type": "string",
+         "description": "Detailed description of the enum option"
       }
    },
    "required": [
-      "ordinal",
-      "label"
+      "index",
+      "name"
    ]
 }

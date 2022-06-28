@@ -2,11 +2,11 @@
 
 Using blockspecs, a typical device design workflow would be as follows:
 
-* From the product functional specification, identify sets of control functions that can logically be grouped into blocks.  These sets of functions might be:
-  * Replicated in the device, as in the mixing console example above;
+* From the product functional specification, identify sets of control functions that can logically be grouped into blocks. These sets of functions might be:
+  * Replicated in the device, as for example in a mixing console;
   * Already existing in other products (or expected to exist in future products);
   * Industry standard protocol interfaces.
-* Create or find usable blockspec definitions.  Such definitions might be:
+* Create or find usable blockspec definitions. Such definitions might be:
   * Defined in public blockspec libraries;
   * Defined in private (i.e. corporate) blockspec libraries;
   * Custom-built for the product being designed.

@@ -3,6 +3,7 @@
    "type": "object",
    "description": "Generic block member. All block members are based on this one.",
    "title": "Generic block member",
+   "$ref": "bkBase.json",
    "additionalProperties": false,
    "properties": {
       "role": {
@@ -32,7 +33,7 @@
          "$ref": "bkVersionCode.json"
       },
       "constantOid": {
-         "description": "TRUE if and only if object ID is nonvolatile. ",
+         "description": "TRUE if and only if object ID is nonvolatile.",
          "type": "boolean",
          "default": "true"
       },

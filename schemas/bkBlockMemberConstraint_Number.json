@@ -3,11 +3,8 @@
    "type": "object",
    "description": "Constraint specification for a property of type number",
    "title": "Number constraint",
+   "$ref": "bkBase.json",
    "properties": {
-      "value": {
-         "description": "Numeric value.",
-         "type": "number"
-      },
       "min": {
          "description": "Minimum numeric value.",
          "type": "number"

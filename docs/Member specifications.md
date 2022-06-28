@@ -10,25 +10,20 @@ Each `members` entry is an object with the following properties:
 | ----------------- | ------------------------------ | ---------------------------------------------------------------------------------------------|
 | *Required properties for all control objects*      | |                                                                                            |
 | role              | string                         | Role of object in containing block. Unique in containing block                               |
-| class             | string                         | Name of this object's class                                                                  |
-| classVersion      | string                         | Version number of this object's class; format is defined by datatype `ncVersionCode`        |
+| classId           | string array                   | Class identity                                                                               |
+| classVersion      | string                         | Version number of this object's class; format is defined by datatype `NcVersionCode`         |
 | constantOid       | boolean                        | TRUE if and only if object ID is nonvolatile                                                 |
 | *Optional property to be specified when the blockspec defines signal paths and when the member is a port-flexible object - see Ports section* | | |
-| ports             | array of ncPort objects       | List of this object's ncPorts                                                               |
+| ports             | array of NcPort objects        | List of this object's NcPorts                                                                |
 | *Optional additional properties to set values of other control object properties, where needed* | |                                               |
 | (any)             | (varies)                       | Value of control object property                                                             |
 
 ## Nested blocks
 
-As noted above, a block is an NCA control object. Therefore, a blockspec defines a nested block by making it an item in the `members` array. The contents of a nested block's `members` item are as follows (note there is no Ports item. This is explained in the `Ports` section):
+A block is an NCA control object therefore, a blockspec defines a nested block by making it an item in the `members` array. Nested blocks have all the properties mentioned in the previous section but also add the following additional properties:
 
 | **Property Name** | **JSON Datatype** | **Description** |
 | ----------------- | ------------------------------ | ---------------------------------------------------------------------------------------------|
-| *Required properties*      | |                                                                                                                    |
-| role              | string                         | Role of nested block in containing block. Unique in containing block                         |
-| class             | string                         | Name of this object's class. Value = "ncBlock"                                              |
-| classVersion      | string                         | Version number of the current ncBlock class                                                 |
-| *Additional properties for nested blocks* | |                                                                                                     |
 | specID            | string                         | Global ID of the blockspec that defines this nested block                                    |
 | specVersion       | number                         | Version number of the blockspec                                                              |
 | specLibraryID     | string                         | ID of library (optional)                                                                     |

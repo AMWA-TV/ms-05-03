@@ -3,6 +3,7 @@
    "type": "object",
    "description": "Block specification",
    "title": "Blockspec",
+   "$ref": "bkBase.json",
    "properties": {
       "specId": {
          "description": "A blockSpec ID",
@@ -12,6 +13,10 @@
          "description": "Version number of this blockspec",
          "$ref": "bkVersionCode.json"
       },
+      "specDescription": {
+         "description": "Description of this blockspec",
+         "type": "string"
+      },
       "parentSpecId": {
          "description": "Global ID of this blockspec's parent",
          "type": "string"
@@ -19,6 +24,10 @@
       "parentSpecVersion": {
          "description": "Version number of this blockspec's parent",
          "$ref": "bkVersionCode.json"
+      },
+      "isRoot": {
+         "description": "TRUE if and only if block is the root block.",
+         "type": "boolean"
       },
       "lockable": {
          "description": "TRUE if and only if block may be locked by controllers.",

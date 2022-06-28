@@ -1,6 +1,6 @@
 # Stereo audio gain with nested block
 
-Here is a blockspec for a two-channel audio gain control block that includes a nested block that adjusts individual channel gains. This example also shows the use of the speclib library features, which include the specLibId property of the block member, and the Libraries table elsewhere in the document.
+The following is a blockspec for a two-channel audio gain control block that includes a nested block that adjusts individual channel gains. This example also shows the use of the speclib library features, which include the specLibId property of the block member, and the Libraries table elsewhere in the document.
 
 The block diagrams for the main block and nested block are as follows:
 
@@ -13,59 +13,52 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
 ```json
 {
     "specId": "StereoGainBlock",
-    "specVersion": {
-            "major": 1,
-            "minor": 0,
-            "patch": 0
-    },
+    "specVersion": "1.0.0",
+    "specDescription": "Stereo gain block spec",
     "members": [
             {
                 "role": "stereoGain",
                 "specId": "ChannelGainBlock",
-                "specVersion": 1234,
-                "comment": "ncBlock",
+                "specVersion": "1.0.0",
+                "comment": "NcBlock",
                 "classId": [ 1, 1 ],
-                "classVersion": {
-                        "major": 1,
-                        "minor": 0,
-                        "patch": 0
-                },
+                "classVersion": "1.0.0",
                 "ports": [
-                        {
-                            "portName": "stereo_gain_input_1",
-                            "direction": "input"
-                        },
-                        {
-                            "portName": "stereo_gain_input_2",
-                            "direction": "input"
-                        },
-                        {
-                            "portName": "stereo_gain_output_1",
-                            "direction": "output"
-                        },
-                        {
-                            "portName": "stereo_gain_output_2",
-                            "direction": "output"
-                        }
+                    {
+                        "portName": "stereo_gain_input_1",
+                        "direction": "input"
+                    },
+                    {
+                        "portName": "stereo_gain_input_2",
+                        "direction": "input"
+                    },
+                    {
+                        "portName": "stereo_gain_output_1",
+                        "direction": "output"
+                    },
+                    {
+                        "portName": "stereo_gain_output_2",
+                        "direction": "output"
+                    }
                 ],
                 "constraints": [
                         {
                             "path": "left",
                             "propertyId": {
-                                    "level": 4,
+                                    "level": 5,
                                     "index": 1
                             },
-                            "value": 0,
+                            "comment": "NcGain setPoint property",
                             "minimum": -20,
                             "maximum": 0
                         },
                         {
                             "path": "right",
                             "propertyId": {
-                                    "level": 4,
+                                    "level": 5,
                                     "index": 1
                             },
-                            "value": 0,
+                            "comment": "NcGain setPoint property",
                             "minimum": -20,
                             "maximum": 0
                         }
@@ -73,13 +66,8 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
             },
             {
                 "role": "masterGain",
-                "class": "ncGain",
-                "classId": [ 1, 2, 1, 1 ],
-                "classVersion": {
-                        "major": 1,
-                        "minor": 0,
-                        "patch": 0
-                },
+                "classId": [ 1, 2, 1, 1, 1 ],
+                "classVersion": "1.0.0",
                 "ports": [
                         {
                             "portName": "input_1",
@@ -101,10 +89,10 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
                 "constraints": [
                         {
                             "propertyId": {
-                                    "level": 4,
+                                    "level": 5,
                                     "index": 1
                             },
-                            "value": -5,
+                            "comment": "NcGain setPoint property",
                             "minimum": -50,
                             "maximum": 10
                         }
@@ -205,15 +193,9 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
 ```json
 {
     "specId": "ChannelGainBlock",
-    "specVersion": {
-            "major": 1,
-            "minor": 0,
-            "patch": 0
-    },
+    "specVersion": "1.0.0",
     "specLibId": "basicAudio",
     "specDescription": "Two-channel audio gain control",
-    "lockable": true,
-    "isDynamic": false,
     "ports": [
             {
                 "role": "block_input_1",
@@ -257,10 +239,9 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
     "members": [
             {
                 "role": "left",
-                "comment": "ncGain",
-                "classId": [ 1, 2, 1, 1 ],
-                "classVersion": 1,
-                "constantOID": true,
+                "comment": "NcGain",
+                "classId": [ 1, 2, 1, 1, 1 ],
+                "classVersion": "1.0.0",
                 "ports": [
                         {
                             "role": "input_1",
@@ -274,10 +255,9 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
             },
             {
                 "role": "right",
-                "classId": [ 1, 2, 1, 1 ],
-                "classVersion": 1,
-                "comment": "ncGain",
-                "constantOID": true,
+                "classId": [ 1, 2, 1, 1, 1 ],
+                "classVersion": "1.0.0",
+                "comment": "NcGain",
                 "ports": [
                         {
                             "role": "input_1",
@@ -293,7 +273,7 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
 }
 ```
 
-Here is the libraries table that goes at the beginning of the blockspec file and decodes library spec IDs mentioned in the blockspec:
+Here is the libraries collection that goes at the beginning of the blockspec file and decodes library spec IDs mentioned in the blockspec:
 
 ```json
 {
