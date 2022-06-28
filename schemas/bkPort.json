@@ -12,9 +12,9 @@
         "direction": {
             "description": "Input (sink) or output (source) port",
             "enum": [
-                "undefined",
-                "input",
-                "output"
+                "Undefined",
+                "Input",
+                "Output"
             ]
         },
         "clockPath": {
