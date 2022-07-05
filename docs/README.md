@@ -23,9 +23,9 @@
 
 - [Typical device design workflow](Typical%20device%20design%20workflow.md)
 
-### Minimum device blockspec
+### Base device blockspec
 
-- [Minimum device blockspec](Minimum%20device%20blockspec.md)
+- [Base device blockspec](Base%20device%20blockspec.md)
 
 ### Other examples
 

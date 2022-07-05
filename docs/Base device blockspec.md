@@ -1,4 +1,4 @@
-# Minimum device blockspec
+# Base device blockspec
 
 The following blockspec definition must be implemented by any minimum compliant NCA device.
 This blockspec must be applied to a device's root block as signaled by `"isRoot": true`.
