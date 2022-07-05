@@ -19,6 +19,12 @@ Sets out the rules and requirements for creating Blockspec files which can be us
 
 Describes a uniform way of specifying block functionality and constraints for standardising feature sets.
 
+### Other specifications in the suite
+
+- [MS-05-01 NMOS Control Architecture](https://specs.amwa.tv/ms-05-01)
+- [MS-05-02 NMOS Control Framework](https://specs.amwa.tv/ms-05-02)
+- [IS-12 NMOS Control Protocol](https://specs.amwa.tv/is-12)
+
 <!-- INTRO-END -->
 
 ## Getting started
