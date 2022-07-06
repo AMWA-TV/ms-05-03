@@ -1,4 +1,4 @@
-# Base device blockspec
+# Base root blockspec
 
 The following blockspec definition must be implemented by any minimum compliant NCA device.
 This blockspec must be applied to a device's root block as signaled by `"isRoot": true`.
@@ -14,12 +14,14 @@ It must contain the following managers:
 It must also be lockable as signaled by `"lockable": true`.
 More information about the locking mechanisms is available in [MS-05-02 NMOS Control Framework](https://specs.amwa.tv/ms-05-02).
 
+Any other root blockspec must inherit from this base root blockspec.
+
 ```json
 {
     "isRoot": true,
-    "specId": "minimum-device",
+    "specId": "base-root",
     "specVersion": "1.0.0",
-    "specDescription": "Blockspec for root block of minimum device model",
+    "specDescription": "Blockspec for root block of minimum compliant device",
     "comment": "This blockspec definition must be implemented by any minimum compliant NCA device",
     "members": [
         {
