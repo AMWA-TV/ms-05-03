@@ -23,9 +23,9 @@
 
 - [Typical device design workflow](Typical%20device%20design%20workflow.md)
 
-### Base device blockspec
+### Base root blockspec
 
-- [Base device blockspec](Base%20device%20blockspec.md)
+- [Base root blockspec](Base%20root%20blockspec.md)
 
 ### Other examples
 
