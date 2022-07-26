@@ -39,7 +39,7 @@ Any other root blockspec must inherit from this base root blockspec.
             "classId": [
                 1,
                 3,
-                3
+                2
             ],
             "comment": "Class manager",
             "classVersion": "1.0.0"
@@ -49,7 +49,7 @@ Any other root blockspec must inherit from this base root blockspec.
             "classId": [
                 1,
                 3,
-                5
+                4
             ],
             "comment": "Subscription manager",
             "classVersion": "1.0.0"
