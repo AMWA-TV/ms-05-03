@@ -29,10 +29,6 @@
          "description": "TRUE if and only if block is the root block.",
          "type": "boolean"
       },
-      "lockable": {
-         "description": "TRUE if and only if block may be locked by controllers.",
-         "type": "boolean"
-      },
       "isDynamic": {
          "description": "TRUE if and only if controllers may add and delete objects from this block",
          "type": "boolean"

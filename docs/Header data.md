@@ -7,5 +7,4 @@
 | parentSpecId      | string            | Global ID of this blockspec's parent                                       |
 | parentSpecVersion | number            | Version number of this blockspec's parent                                  |
 | specDescription   | string            | Simple description of this blockspec                                       |
-| lockable          | boolean           | TRUE if and only if block may be locked by controllers                     |
 | isDynamic         | boolean           | TRUE if and only if controllers may add and delete objects from this block |
