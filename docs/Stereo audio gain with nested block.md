@@ -48,7 +48,7 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
                                     "level": 5,
                                     "index": 1
                             },
-                            "comment": "NcGain setPoint property",
+                            "comment": "NcGain gainValue property",
                             "minimum": -20,
                             "maximum": 0
                         },
@@ -58,7 +58,7 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
                                     "level": 5,
                                     "index": 1
                             },
-                            "comment": "NcGain setPoint property",
+                            "comment": "NcGain gainValue property",
                             "minimum": -20,
                             "maximum": 0
                         }
@@ -92,7 +92,7 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
                                     "level": 5,
                                     "index": 1
                             },
-                            "comment": "NcGain setPoint property",
+                            "comment": "NcGain gainValue property",
                             "minimum": -50,
                             "maximum": 10
                         }
