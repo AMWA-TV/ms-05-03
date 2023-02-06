@@ -4,6 +4,6 @@
    "description": "Array of role names. Absolute path starts with name of root block, which is always null. Relative path starts with name of first contained block within the current one.",
    "title": "Block role path",
    "items": {
-      "$ref": "bkName.json"
+      "type": "string"
    }
 }
