@@ -7,7 +7,7 @@
     "properties": {
         "role": {
             "description": "Role of port in the object that owns it.  Value is unique within the owning object.",
-            "$ref": "bkName.json"
+            "type": "string"
         },
         "direction": {
             "description": "Input (sink) or output (source) port",
