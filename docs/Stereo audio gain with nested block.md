@@ -47,8 +47,8 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
                 {
                     "path": [ "left" ],
                     "propertyId": {
-                            "level": 5,
-                            "index": 1
+                        "level": 5,
+                        "index": 1
                     },
                     "comment": "NcGain gainValue property",
                     "minimum": -20,
@@ -57,8 +57,8 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
                 {
                     "path": [ "right" ],
                     "propertyId": {
-                            "level": 5,
-                            "index": 1
+                        "level": 5,
+                        "index": 1
                     },
                     "comment": "NcGain gainValue property",
                     "minimum": -20,
@@ -94,8 +94,8 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
                 {
                     "path": null,
                     "propertyId": {
-                            "level": 5,
-                            "index": 1
+                        "level": 5,
+                        "index": 1
                     },
                     "comment": "NcGain gainValue property",
                     "minimum": -50,
@@ -125,67 +125,67 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
     "signalPaths": [
         {
             "source": {
-                    "owner": [],
-                    "role": "block_input_1"
+                "owner": [],
+                "role": "block_input_1"
             },
             "sink": {
-                    "owner": [ "stereoGain" ],
-                    "role": "stereo_gain_input_1"
+                "owner": [ "stereoGain" ],
+                "role": "stereo_gain_input_1"
             },
             "role": "owner_1"
         },
         {
             "source": {
-                    "owner": [ "stereoGain" ],
-                    "role": "stereo_gain_output_1"
+                "owner": [ "stereoGain" ],
+                "role": "stereo_gain_output_1"
             },
             "sink": {
-                    "owner": [ "masterGain" ],
-                    "role": "input_1"
+                "owner": [ "masterGain" ],
+                "role": "input_1"
             },
             "role": "owner_2"
         },
         {
             "source": {
-                    "owner": [ "masterGain" ],
-                    "role": "output_1"
+                "owner": [ "masterGain" ],
+                "role": "output_1"
             },
             "sink": {
-                    "owner": [],
-                    "role": "block_output_1"
+                "owner": [],
+                "role": "block_output_1"
             },
             "role": "owner_5"
         },
         {
             "source": {
-                    "owner": [],
-                    "role": "block_input_2"
+                "owner": [],
+                "role": "block_input_2"
             },
             "sink": {
-                    "owner": [ "stereoGain" ],
-                    "role": "stereo_gain_input_1"
+                "owner": [ "stereoGain" ],
+                "role": "stereo_gain_input_1"
             },
             "role": "owner_3"
         },
         {
             "source": {
-                    "owner": [ "stereoGain" ],
-                    "role": "stereo_gain_output_2"
+                "owner": [ "stereoGain" ],
+                "role": "stereo_gain_output_2"
             },
             "sink": {
-                    "owner": [ "masterGain" ],
-                    "role": "input_2"
+                "owner": [ "masterGain" ],
+                "role": "input_2"
             },
             "role": "owner_4"
         },
         {
             "source": {
-                    "owner": [ "masterGain" ],
-                    "role": "output_2"
+                "owner": [ "masterGain" ],
+                "role": "output_2"
             },
             "sink": {
-                    "owner": [],
-                    "role": "block_output_2"
+                "owner": [],
+                "role": "block_output_2"
             },
             "role": "owner_6"
         }
@@ -222,22 +222,22 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
     "signalFlows": [
         {
             "source": {
-                    "owner": [],
-                    "role": "block_input_1"
+                "owner": [],
+                "role": "block_input_1"
             },
             "sink": {
-                    "owner": [ "leftGain" ],
-                    "role": "input_1"
+                "owner": [ "leftGain" ],
+                "role": "input_1"
             }
         },
         {
             "source": {
-                    "owner": [ "leftGain" ],
-                    "role": "output_1"
+                "owner": [ "leftGain" ],
+                "role": "output_1"
             },
             "sink": {
-                    "owner": [],
-                    "role": "block_output_1"
+                "owner": [],
+                "role": "block_output_1"
             }
         }
     ],
@@ -288,12 +288,12 @@ Here is the libraries collection that goes at the beginning of the blockspec fil
 {
   "libraries": [
     {
-      "reference": "stereoAudio",
-      "location": "<AMWA repo link>"
+        "reference": "stereoAudio",
+        "location": "<AMWA repo link>"
     },
     {
-      "reference": "basicAudio",
-      "location": "<AMWA repo link>"
+        "reference": "basicAudio",
+        "location": "<AMWA repo link>"
     }
   ]
 }
