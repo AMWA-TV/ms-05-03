@@ -23,33 +23,39 @@ Any other root blockspec must inherit from this base root blockspec.
     "members": [
         {
             "role": "DeviceManager",
-            "classId": [
-                1,
-                3,
-                1
-            ],
-            "comment": "Device manager",
-            "classVersion": "1.0.0"
+            "identity": {
+                "id": [
+                    1,
+                    3,
+                    1
+                ],
+                "version": "1.0.0"
+            },
+            "comment": "Device manager"
         },
         {
             "role": "ClassManager",
-            "classId": [
-                1,
-                3,
-                2
-            ],
-            "comment": "Class manager",
-            "classVersion": "1.0.0"
+            "identity": {
+                "id": [
+                    1,
+                    3,
+                    2
+                ],
+                "version": "1.0.0"
+            },
+            "comment": "Class manager"
         },
         {
             "role": "SubscriptionManager",
-            "classId": [
-                1,
-                3,
-                4
-            ],
-            "comment": "Subscription manager",
-            "classVersion": "1.0.0"
+            "identity": {
+                "id": [
+                    1,
+                    3,
+                    4
+                ],
+                "version": "1.0.0"
+            },
+            "comment": "Subscription manager"
         }
     ]
 }

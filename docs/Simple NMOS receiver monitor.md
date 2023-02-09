@@ -11,9 +11,15 @@ The following is a blockspec for a simple NMOS receiver monitor. The block conta
     "members": [
         {
             "role": "ReceiverMonitor_01",
-            "classId": [1, 2, 3],
-            "comment": "Receiver monitor",
-            "classVersion": "1.0.0"
+            "identity": {
+                "id": [
+                    1,
+                    2,
+                    3
+                ],
+                "version": "1.0.0"
+            },
+            "comment": "Receiver monitor"
         }
     ]
 }

@@ -18,7 +18,7 @@
             ]
         },
         "clockPath": {
-            "description": "Path to this port's ncMediaClock object, if any",
+            "description": "Role path of this port's sample clock or null if none",
             "$ref": "bkRolePath.json"
         }
     }
