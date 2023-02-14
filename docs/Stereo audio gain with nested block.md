@@ -16,174 +16,179 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
     "specVersion": "1.0.0",
     "specDescription": "Stereo gain block spec",
     "members": [
-            {
-                "role": "stereoGain",
-                "specId": "ChannelGainBlock",
-                "specVersion": "1.0.0",
-                "comment": "NcBlock",
-                "classId": [ 1, 1 ],
-                "classVersion": "1.0.0",
-                "ports": [
-                    {
-                        "portName": "stereo_gain_input_1",
-                        "direction": "input"
-                    },
-                    {
-                        "portName": "stereo_gain_input_2",
-                        "direction": "input"
-                    },
-                    {
-                        "portName": "stereo_gain_output_1",
-                        "direction": "output"
-                    },
-                    {
-                        "portName": "stereo_gain_output_2",
-                        "direction": "output"
-                    }
-                ],
-                "constraints": [
-                        {
-                            "path": "left",
-                            "propertyId": {
-                                    "level": 5,
-                                    "index": 1
-                            },
-                            "comment": "NcGain gainValue property",
-                            "minimum": -20,
-                            "maximum": 0
-                        },
-                        {
-                            "path": "right",
-                            "propertyId": {
-                                    "level": 5,
-                                    "index": 1
-                            },
-                            "comment": "NcGain gainValue property",
-                            "minimum": -20,
-                            "maximum": 0
-                        }
-                ]
+        {
+            "role": "stereoGain",
+            "specId": "ChannelGainBlock",
+            "specVersion": "1.0.0",
+            "comment": "NcBlock",
+            "identity": {
+                "id": [ 1, 1 ],
+                "version": "1.0.0"
             },
-            {
-                "role": "masterGain",
-                "classId": [ 1, 2, 1, 1, 1 ],
-                "classVersion": "1.0.0",
-                "ports": [
-                        {
-                            "portName": "input_1",
-                            "direction": "input"
-                        },
-                        {
-                            "portName": "input_2",
-                            "direction": "input"
-                        },
-                        {
-                            "portName": "output_1",
-                            "direction": "output"
-                        },
-                        {
-                            "portName": "output_2",
-                            "direction": "output"
-                        }
-                ],
-                "constraints": [
-                        {
-                            "propertyId": {
-                                    "level": 5,
-                                    "index": 1
-                            },
-                            "comment": "NcGain gainValue property",
-                            "minimum": -50,
-                            "maximum": 10
-                        }
-                ]
-            }
+            "ports": [
+                {
+                    "role": "stereo_gain_input_1",
+                    "direction": "input"
+                },
+                {
+                    "role": "stereo_gain_input_2",
+                    "direction": "input"
+                },
+                {
+                    "role": "stereo_gain_output_1",
+                    "direction": "output"
+                },
+                {
+                    "role": "stereo_gain_output_2",
+                    "direction": "output"
+                }
+            ],
+            "constraints": [
+                {
+                    "path": [ "left" ],
+                    "propertyId": {
+                        "level": 5,
+                        "index": 1
+                    },
+                    "comment": "NcGain gainValue property",
+                    "minimum": -20,
+                    "maximum": 0
+                },
+                {
+                    "path": [ "right" ],
+                    "propertyId": {
+                        "level": 5,
+                        "index": 1
+                    },
+                    "comment": "NcGain gainValue property",
+                    "minimum": -20,
+                    "maximum": 0
+                }
+            ]
+        },
+        {
+            "role": "masterGain",
+            "identity": {
+                "id": [ 1, 2, 1, 1, 1 ],
+                "version": "1.0.0"
+            },
+            "ports": [
+                {
+                    "role": "input_1",
+                    "direction": "input"
+                },
+                {
+                    "role": "input_2",
+                    "direction": "input"
+                },
+                {
+                    "role": "output_1",
+                    "direction": "output"
+                },
+                {
+                    "role": "output_2",
+                    "direction": "output"
+                }
+            ],
+            "constraints": [
+                {
+                    "path": null,
+                    "propertyId": {
+                        "level": 5,
+                        "index": 1
+                    },
+                    "comment": "NcGain gainValue property",
+                    "minimum": -50,
+                    "maximum": 10
+                }
+            ]
+        }
     ],
     "ports": [
-            {
-                "portName": "block_input_1",
-                "direction": "input"
-            },
-            {
-                "portName": "block_input_2",
-                "direction": "input"
-            },
-            {
-                "portName": "block_output_1",
-                "direction": "output"
-            },
-            {
-                "portName": "block_output_2",
-                "direction": "output"
-            }
+        {
+            "role": "block_input_1",
+            "direction": "input"
+        },
+        {
+            "role": "block_input_2",
+            "direction": "input"
+        },
+        {
+            "role": "block_output_1",
+            "direction": "output"
+        },
+        {
+            "role": "block_output_2",
+            "direction": "output"
+        }
     ],
     "signalPaths": [
-            {
-                "source": {
-                        "path": [],
-                        "portName": "block_input_1"
-                },
-                "sink": {
-                        "path": [ "stereoGain" ],
-                        "portName": "stereo_gain_input_1"
-                },
-                "pathName": "path_1"
+        {
+            "source": {
+                "owner": [],
+                "role": "block_input_1"
             },
-            {
-                "source": {
-                        "path": [ "stereoGain" ],
-                        "portName": "stereo_gain_output_1"
-                },
-                "sink": {
-                        "path": [ "masterGain" ],
-                        "portName": "input_1"
-                },
-                "pathName": "path_2"
+            "sink": {
+                "owner": [ "stereoGain" ],
+                "role": "stereo_gain_input_1"
             },
-            {
-                "source": {
-                        "path": [ "masterGain" ],
-                        "portName": "output_1"
-                },
-                "sink": {
-                        "path": [],
-                        "portName": "block_output_1"
-                },
-                "pathName": "path_5"
+            "role": "owner_1"
+        },
+        {
+            "source": {
+                "owner": [ "stereoGain" ],
+                "role": "stereo_gain_output_1"
             },
-            {
-                "source": {
-                        "path": [],
-                        "portName": "block_input_2"
-                },
-                "sink": {
-                        "path": [ "stereoGain" ],
-                        "portName": "stereo_gain_input_1"
-                },
-                "pathName": "path_3"
+            "sink": {
+                "owner": [ "masterGain" ],
+                "role": "input_1"
             },
-            {
-                "source": {
-                        "path": [ "stereoGain" ],
-                        "portName": "stereo_gain_output_2"
-                },
-                "sink": {
-                        "path": [ "masterGain" ],
-                        "portName": "input_2"
-                },
-                "pathName": "path_4"
+            "role": "owner_2"
+        },
+        {
+            "source": {
+                "owner": [ "masterGain" ],
+                "role": "output_1"
             },
-            {
-                "source": {
-                        "path": [ "masterGain" ],
-                        "portName": "output_2"
-                },
-                "sink": {
-                        "path": [],
-                        "portName": "block_output_2"
-                },
-                "pathName": "path_6"
-            }
+            "sink": {
+                "owner": [],
+                "role": "block_output_1"
+            },
+            "role": "owner_5"
+        },
+        {
+            "source": {
+                "owner": [],
+                "role": "block_input_2"
+            },
+            "sink": {
+                "owner": [ "stereoGain" ],
+                "role": "stereo_gain_input_1"
+            },
+            "role": "owner_3"
+        },
+        {
+            "source": {
+                "owner": [ "stereoGain" ],
+                "role": "stereo_gain_output_2"
+            },
+            "sink": {
+                "owner": [ "masterGain" ],
+                "role": "input_2"
+            },
+            "role": "owner_4"
+        },
+        {
+            "source": {
+                "owner": [ "masterGain" ],
+                "role": "output_2"
+            },
+            "sink": {
+                "owner": [],
+                "role": "block_output_2"
+            },
+            "role": "owner_6"
+        }
     ]
 }
 ```
@@ -197,78 +202,82 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
     "specLibId": "basicAudio",
     "specDescription": "Two-channel audio gain control",
     "ports": [
-            {
-                "role": "block_input_1",
-                "direction": "input"
-            },
-            {
-                "role": "block_input_2",
-                "direction": "input"
-            },
-            {
-                "role": "block_output_1",
-                "direction": "output"
-            },
-            {
-                "role": "block_output_2",
-                "direction": "output"
-            }
+        {
+            "role": "block_input_1",
+            "direction": "input"
+        },
+        {
+            "role": "block_input_2",
+            "direction": "input"
+        },
+        {
+            "role": "block_output_1",
+            "direction": "output"
+        },
+        {
+            "role": "block_output_2",
+            "direction": "output"
+        }
     ],
     "signalFlows": [
-            {
-                "source": {
-                        "path": [],
-                        "role": "block_input_1"
-                },
-                "sink": {
-                        "path": [ "leftGain" ],
-                        "role": "input_1"
-                }
+        {
+            "source": {
+                "owner": [],
+                "role": "block_input_1"
             },
-            {
-                "source": {
-                        "path": [ "leftGain" ],
-                        "role": "output_1"
-                },
-                "sink": {
-                        "path": [],
-                        "role": "block_output_1"
-                }
+            "sink": {
+                "owner": [ "leftGain" ],
+                "role": "input_1"
             }
+        },
+        {
+            "source": {
+                "owner": [ "leftGain" ],
+                "role": "output_1"
+            },
+            "sink": {
+                "owner": [],
+                "role": "block_output_1"
+            }
+        }
     ],
     "members": [
-            {
-                "role": "left",
-                "comment": "NcGain",
-                "classId": [ 1, 2, 1, 1, 1 ],
-                "classVersion": "1.0.0",
-                "ports": [
-                        {
-                            "role": "input_1",
-                            "direction": "input"
-                        },
-                        {
-                            "role": "output_1",
-                            "direction": "output"
-                        }
-                ]
+        {
+            "role": "left",
+            "comment": "NcGain",
+            "identity": {
+                "id": [ 1, 2, 1, 1, 1 ],
+                "version": "1.0.0"
             },
-            {
-                "role": "right",
-                "classId": [ 1, 2, 1, 1, 1 ],
-                "classVersion": "1.0.0",
-                "comment": "NcGain",
-                "ports": [
-                        {
-                            "role": "input_1",
-                            "direction": "input"
-                        },
-                        {
-                            "role": "output_1",
-                            "direction": "output"
-                        }
-                ]
-            }
+            "ports": [
+                {
+                    "role": "input_1",
+                    "direction": "input"
+                },
+                {
+                    "role": "output_1",
+                    "direction": "output"
+                }
+            ]
+        },
+        {
+            "role": "right",
+            "identity": {
+                "id": [ 1, 2, 1, 1, 1 ],
+                "version": "1.0.0"
+            },
+            "comment": "NcGain",
+            "ports": [
+                {
+                    "role": "input_1",
+                    "direction": "input"
+                },
+                {
+                    "role": "output_1",
+                    "direction": "output"
+                }
+            ]
+        }
     ]
 }
 ```
@@ -279,12 +288,12 @@ Here is the libraries collection that goes at the beginning of the blockspec fil
 {
   "libraries": [
     {
-      "reference": "stereoAudio",
-      "location": "<AMWA repo link>"
+        "reference": "stereoAudio",
+        "location": "<AMWA repo link>"
     },
     {
-      "reference": "basicAudio",
-      "location": "<AMWA repo link>"
+        "reference": "basicAudio",
+        "location": "<AMWA repo link>"
     }
   ]
 }

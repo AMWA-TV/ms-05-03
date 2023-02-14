@@ -5,13 +5,13 @@
    "title": "Enum option value",
    "$ref": "bkBase.json",
    "properties": {
-      "index": {
-         "type": "integer",
-         "description": "Numeric value associated with the enum option"
-      },
       "name": {
          "type": "string",
          "description": "Name of the enum option"
+      },
+      "value": {
+         "type": "integer",
+         "description": "Numeric value associated with the enum option"
       },
       "description": {
          "type": "string",
@@ -19,7 +19,7 @@
       }
    },
    "required": [
-      "index",
-      "name"
+      "name",
+      "value"
    ]
 }

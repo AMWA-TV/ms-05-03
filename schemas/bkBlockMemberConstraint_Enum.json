@@ -12,5 +12,8 @@
             "$ref": "bkBlockMemberConstraintEnumOption.json"
          }
       }
-   }
+   },
+   "required": [
+      "possibleValues"
+   ]
 }

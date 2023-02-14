@@ -14,12 +14,12 @@
          "type": "string"
       },
       "source": {
-         "description": "Role of source port",
-         "$ref": "bkName.json"
+         "description": "Source port reference",
+         "$ref": "bkPortReference.json"
       },
       "sink": {
-         "description": "Role of sink port",
-         "$ref": "bkName.json"
+         "description": "Sink port reference",
+         "$ref": "bkPortReference.json"
       }
    }
 }
