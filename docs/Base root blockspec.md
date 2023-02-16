@@ -9,7 +9,6 @@ It must contain the following managers:
 
 * Device manager
 * Class manager
-* Subscription manager
 
 Any other root blockspec must inherit from this base root blockspec.
 
@@ -44,18 +43,6 @@ Any other root blockspec must inherit from this base root blockspec.
                 "version": "1.0.0"
             },
             "comment": "Class manager"
-        },
-        {
-            "role": "SubscriptionManager",
-            "identity": {
-                "id": [
-                    1,
-                    3,
-                    4
-                ],
-                "version": "1.0.0"
-            },
-            "comment": "Subscription manager"
         }
     ]
 }
