@@ -21,10 +21,7 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
             "specId": "ChannelGainBlock",
             "specVersion": "1.0.0",
             "comment": "NcBlock",
-            "identity": {
-                "id": [ 1, 1 ],
-                "version": "1.0.0"
-            },
+            "classId": [ 1, 1 ],
             "ports": [
                 {
                     "role": "stereo_gain_input_1",
@@ -68,10 +65,7 @@ Here is the blockspec for the outer block, `StereoGainBlock`:
         },
         {
             "role": "masterGain",
-            "identity": {
-                "id": [ 1, 2, 1, 1, 1 ],
-                "version": "1.0.0"
-            },
+            "classId": [ 1, 2, 1, 1, 1 ],
             "ports": [
                 {
                     "role": "input_1",
@@ -245,10 +239,7 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
         {
             "role": "left",
             "comment": "NcGain",
-            "identity": {
-                "id": [ 1, 2, 1, 1, 1 ],
-                "version": "1.0.0"
-            },
+            "classId": [ 1, 2, 1, 1, 1 ],
             "ports": [
                 {
                     "role": "input_1",
@@ -262,10 +253,7 @@ Here is the blockspec for the inner gain block, `ChannelGainBlock`:
         },
         {
             "role": "right",
-            "identity": {
-                "id": [ 1, 2, 1, 1, 1 ],
-                "version": "1.0.0"
-            },
+            "classId": [ 1, 2, 1, 1, 1 ],
             "comment": "NcGain",
             "ports": [
                 {
