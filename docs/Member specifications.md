@@ -11,7 +11,6 @@ Each `members` entry is an object with the following properties:
 | *Required properties for all control objects*      | |                                                                                            |
 | role              | string                         | Role of object in containing block. Unique in containing block                               |
 | classId           | number array                   | Class identity                                                                               |
-| classVersion      | string                         | Version number of this object's class; format is defined by datatype `NcVersionCode`         |
 | constantOid       | boolean                        | TRUE if and only if object ID is nonvolatile                                                 |
 | *Optional property to be specified when the blockspec defines signal paths and when the member is a port-flexible object - see Ports section* | | |
 | ports             | array of ncPort objects        | List of this object's NcPorts                                                                |

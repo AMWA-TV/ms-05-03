@@ -10,14 +10,28 @@
          "description": "Role of member in the block. Value is unique within the block.",
          "type": "string"
       },
+      "classId": {
+         "description": "ID of class of which the member is an instance",
+         "type": "array",
+         "notes": [
+            "Value zero is reserved. ",
+            "Values  (0000001h ... 7FFFFFFFh) (1 ... 2147486347) are indices",
+            "Values  (FF000000h ...FFFFFFFFh) (-16777216 ... -1) are authority keys",
+            "Values (FEFFFFFFh ... 80000000h) (-16 777217 ... -2147483648)  are reserved"
+         ],
+         "oneOf": [
+            {
+               "$ref": "bkClassIndex.json"
+            },
+            {
+               "$ref": "bkAuthorityKey.json"
+            }
+         ]
+      },
       "constantOid": {
          "description": "TRUE if and only if object ID is nonvolatile.",
          "type": "boolean",
          "default": "true"
-      },
-      "identity": {
-         "description": "Identity of class of which this member is an instance",
-         "$ref": "bkClassIdentity.json"
       },
       "ports": {
          "description": "List of this object's bkPorts. Used only when member is a port-flexible object.",
@@ -36,6 +50,6 @@
    },
    "required": [
       "role",
-      "identity"
+      "classId"
    ]
 }

@@ -4,23 +4,20 @@ The following is a blockspec for a simple NMOS receiver monitor. The block conta
 
 ```json
 {
-    "specId": "receiver-status",
-    "specVersion": "1.0.0",
-    "specDescription": "Blockspec for receiver status",
-    "comment": "A blockspec for a simple NMOS receiver monitor",
-    "members": [
-        {
-            "role": "ReceiverMonitor_01",
-            "identity": {
-                "id": [
-                    1,
-                    2,
-                    3
-                ],
-                "version": "1.0.0"
-            },
-            "comment": "Receiver monitor"
-        }
-    ]
+  "specId": "receiver-status",
+  "specVersion": "1.0.0",
+  "specDescription": "Blockspec for receiver status",
+  "comment": "A blockspec for a simple NMOS receiver monitor",
+  "members": [
+    {
+      "role": "ReceiverMonitor_01",
+      "classId": [
+        1,
+        2,
+        3
+      ],
+      "comment": "Receiver monitor"
+    }
+  ]
 }
 ```

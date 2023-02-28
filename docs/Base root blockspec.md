@@ -14,36 +14,30 @@ Any other root blockspec must inherit from this base root blockspec.
 
 ```json
 {
-    "isRoot": true,
-    "specId": "base-root",
-    "specVersion": "1.0.0",
-    "specDescription": "Blockspec for root block of minimum compliant device",
-    "comment": "This blockspec definition must be implemented by any minimum compliant NCA device",
-    "members": [
-        {
-            "role": "DeviceManager",
-            "identity": {
-                "id": [
-                    1,
-                    3,
-                    1
-                ],
-                "version": "1.0.0"
-            },
-            "comment": "Device manager"
-        },
-        {
-            "role": "ClassManager",
-            "identity": {
-                "id": [
-                    1,
-                    3,
-                    2
-                ],
-                "version": "1.0.0"
-            },
-            "comment": "Class manager"
-        }
-    ]
+  "isRoot": true,
+  "specId": "base-root",
+  "specVersion": "1.0.0",
+  "specDescription": "Blockspec for root block of minimum compliant device",
+  "comment": "This blockspec definition must be implemented by any minimum compliant NCA device",
+  "members": [
+    {
+      "role": "DeviceManager",
+      "classId": [
+        1,
+        3,
+        1
+      ],
+      "comment": "Device manager"
+    },
+    {
+      "role": "ClassManager",
+      "classId": [
+        1,
+        3,
+        2
+      ],
+      "comment": "Class manager"
+    }
+  ]
 }
 ```
