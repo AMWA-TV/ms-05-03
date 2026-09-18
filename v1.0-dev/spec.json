@@ -1,0 +1,23 @@
+{
+  "amwa_id": "MS-05-03",
+  "url": "https://specs.amwa.tv/ms-05-03",
+  "name": "AMWA NMOS Control Block Specs",
+  "status": "Work In Progress",
+  "repo_name": "ms-05-03",
+  "alt_repo_name": "nmos-control-block-specs",
+  "repo_url": "https://github.com/AMWA-TV/ms-05-03",
+  "releases": null,
+  "default_branch": "v1.0-dev",
+  "show_in_index": true,
+  "intro": {
+    "what_does_it_do": [
+      "Describes the specification for creating NMOS Control Blockspecs."
+    ],
+    "why_does_it_matter": [
+      "Sets out the rules and requirements for creating Blockspec files which can be used by device manufacturers for implementation."
+    ],
+    "how_does_it_work": [
+      "Describes a uniform way of specifying block functionality and constraints for standardising feature sets."
+    ]
+  }
+}

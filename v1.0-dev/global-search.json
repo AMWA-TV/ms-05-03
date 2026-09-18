@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "repository": "AMWA-TV/ms-05-03",
+  "documents": [
+    {
+      "title": "Base root blockspec",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Base%20root%20blockspec/",
+      "text": "Base root blockspec Base root blockspec Base root blockspec - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Base root blockspec The following blockspec definition must be implemented by any minimum compliant NCA device. This blockspec must be applied to a device's root block as signaled by \"isRoot\": true . The blockspec describes the minimum requirements for the root block . It must contain the following managers: Device manager Class manager Any other root blockspec must inherit from this base root blockspec. { \"isRoot\" : true , \"specId\" : \"base-root\" , \"specVersion\" : \"1.0.0\" , \"specDescription\" : \"Blockspec for root block of minimum compliant device\" , \"comment\" : \"This blockspec definition must be implemented by any minimum compliant NCA device\" , \"members\" : [ { \"role\" : \"DeviceManager\" , \"classId\" : [ 1 , 3 , 1 ], \"comment\" : \"Device manager\" }, { \"role\" : \"ClassManager\" , \"classId\" : [ 1 , 3 , 2 ], \"comment\" : \"Class manager\" } ] }",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Blocks",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Blocks/",
+      "text": "Blocks Blocks Blocks - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Blocks Blocks are instances of the NcBlock control class. The formal specifications of NcBlock and its properties are in MS-05-02. Blocks are the means by which a device model can be organised, nested and discovered. They do not define or constrain the internal programming structures of devices. The contents of a block are control objects which may include other nested blocks representing substructures of the device model. Each control object is an instance of an NCA control class that defines a small API for accessing a particular device control or monitoring function. The complete control API of a block is the union of all its individual objects' APIs; the complete control API of an NCA device is the union of all its blocks' APIs.",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Blockspec contents",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Blockspec%20contents/",
+      "text": "Blockspec contents Blockspec contents Blockspec contents - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Blockspec contents The formal specification of the blockspec format is described in JSON schemas. See the JSON Schemas section. The elements of a blockspec are as follows: Header data Identification of the blockspec and its parent, if any. A simple text description of the blockspec. Collection property specifications Block port collection: List of port descriptors belonging to the block, for media signal flows into and out of the block. Signal path collection: List of signal paths descriptors inside the block Member specifications List of definitions of the control objects the block contains. In NCA, a block is a control object. Therefore, nested blocks will be in the member specification list. All subschemas composing the blockspecs file schema may have a comment property which may be used for adding explanatory notes.",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Blockspec file format",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Blockspec%20file%20format/",
+      "text": "Blockspec file format Blockspec file format Blockspec file format - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Blockspec file format A blockspec file contains a single JSON object with one or two properties, as follows: Property Name JSON Datatype Description libraries array (if the blockspec file contains no library identifiers, the library array may be omitted) Library directory: Array of library identifiers used in the blockspec file and the URLs to which they correspond. A null URL implies that the location of the given library is the blockspec file itself. blockspecs array Array of blockspecs.",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Blockspec library references",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Blockspec%20library%20references/",
+      "text": "Blockspec library references Blockspec library references Blockspec library references - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Blockspec library references It is anticipated that blockspecs will be collected into libraries for developer reuse. To manage the incorporation of library blockspecs: Each blockspec has a globally unique ID - probably a UUID A blockspec reference may be associated with an arbitrary library ID that designates a particular blockspec library Library ID values are local to each blockspec file. Blockspec library IDs are local to the blockspec in which they are used. A separate section of the blockspec file (the library directory ) attaches each library ID to a physical library.",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Collection property specifications",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Collection%20property%20specifications/",
+      "text": "Collection property specifications Collection property specifications Collection property specifications - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Collection property specifications Property Name JSON Datatype Description ports array of NcPort objects List of this block's NcPorts, i.e. signal-path endpoints signalPaths array of NcSignalPath objects List of this block's NcSignalPaths",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Header data",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Header%20data/",
+      "text": "Header data Header data Header data - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Header data Property Name JSON Datatype Description specId string Global ID of this blockspec specVersion number Version number of this blockspec parentSpecId string Global ID of this blockspec's parent parentSpecVersion number Version number of this blockspec's parent specDescription string Simple description of this blockspec isDynamic boolean Indicates if the members of this block can change during device operation",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Inheritance",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Inheritance/",
+      "text": "Inheritance Inheritance Inheritance - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Inheritance A blockspec may be defined as a specialized version of another blockspec. This mechanism is called blockspec inheritance . The blockspec from which a given blockspec inherits is called the parent . The parent blockspec id and version are captured by specific properties inside the NcBlock control object as described in MS-05-02 NMOS Control Framework .",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "AMWA MS-05-03 NMOS Control Blockspecs [Work In Progress]",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Introduction/",
+      "text": "AMWA MS-05-03 NMOS Control Blockspecs [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs [Work In Progress] Introduction - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content AMWA MS-05-03 NMOS Control Blockspecs [Work In Progress] The NMOS Control Architecture, includes the ability for developers and development support organizations to define standard modules called blocks that encapsulate sets of control functions. A blockspec is the formal specification of the contents of a particular type of block. In device design, blockspecs can be instantiated to form blocks. For example, a blockspec named \"MicPre\" could describe a particular kind of microphone preamplifier. A 24-channel mixing console's device model could instantiate MicPre 24 times. The result would be 24 microphone preamplifier blocks in the mixing console's NCA control API. By defining and using standard, reusable blocks, the engineering of interoperable devices and software functions will be eased, and the quality of control among devices increased. It is anticipated that, over time, organizations will collect blockspecs into libraries from which developers may select useful elements. Discussions are underway for an AMWA public library to be created in further iterations of the working group. This document relies on previous familiarity with the following existing documents: MS-05-01 NMOS Control Architecture MS-05-02 NMOS Control Framework",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Member specifications",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Member%20specifications/",
+      "text": "Member specifications Member specifications Nested blocks Block specific properties Member specifications - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Member specifications Property Name JSON Datatype Description members array of member objects One array entry for each control object in the block Each members entry is an object with the following properties: Property Name JSON Datatype Description Required properties for all control objects role string Role of object in containing block. Unique in containing block classId number array Class identity constantOid boolean TRUE if and only if object ID is nonvolatile Optional property to be specified when the blockspec defines signal paths and when the member is a port-flexible object - see Ports section ports array of ncPort objects List of this object's NcPorts Optional additional properties to set values of other control object properties, where needed (any) (varies) Value of control object property Nested blocks A block is an NCA control object therefore, a blockspec defines a nested block by making it an item in the members array. Block specific properties Blocks have all the properties mentioned in the previous section but also add the following additional properties: | specID | string | Global ID of the blockspec that defines this nested block | | specVersion | number | Version number of the blockspec | | specLibraryID | string | ID of library (optional) |",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Ports",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Ports/",
+      "text": "Ports Ports Ports - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Ports An object's ports may be defined in one of two ways, depending on its nature. For some kinds of objects ( concrete objects), the set of ports is fixed. For example: A block's ports are defined in the block port collection of its blockspec, as described above. A bespoke multichannel audio processor (e.g. a Dolby 5.1 processor) will have statically defined inputs and outputs. For other kinds of objects ( port-flexible objects), the set of ports may be defined by the blockspec that deploys them. For example: A gain object may be deployed as a monaural control (one input, one output) in one case, but as a stereophonic control (two inputs, two outputs) in another. A matrix object may be deployed with different matrix sizes in different cases; in all cases, its port list will correspond to its size. For instance, a 2x2 matrix will have two input ports and two output ports, while a 4x16 matrix will have four input ports and sixteen output ports.",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Root block",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Root%20block/",
+      "text": "Root block Root block Root block - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Root block Every NCA device model has a single root block that contains all the device's control objects. Control objects may be contained directly in the root block, or indirectly as contents of additional blocks contained ( nested ) in the root block. Blocks may be nested to any level. Every control object has a role name that is unique within its containing block. Control objects nested at any level inside the device model are uniquely identifiable using a role path built from the roles of all the parents starting with the root block and finishing with the role of the specific control object.",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Signal paths",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Signal%20paths/",
+      "text": "Signal paths Signal paths Signal paths - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Signal paths Most media devices are fundamentally concerned with audio/video signal storage, processing, and/or forwarding. To describe these functions, NCA defines the concept of signal paths between control objects. In addition to containing a set of control objects, a block may optionally define the signal paths among those objects. Signal paths are properties of the NcBlock class as described in MS-05-02 NMOS Control Framework .",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Simple NMOS receiver monitor",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Simple%20NMOS%20receiver%20monitor/",
+      "text": "Simple NMOS receiver monitor Simple NMOS receiver monitor Simple NMOS receiver monitor - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Simple NMOS receiver monitor The following is a blockspec for a simple NMOS receiver monitor. The block contains only one object, an instance of the NcReceiverMonitor class. In this case, the block doesn't process any media signals, so neither it nor the object it contains has any ports, and there are no signal paths. { \"specId\" : \"receiver-status\" , \"specVersion\" : \"1.0.0\" , \"specDescription\" : \"Blockspec for receiver status\" , \"comment\" : \"A blockspec for a simple NMOS receiver monitor\" , \"members\" : [ { \"role\" : \"ReceiverMonitor_01\" , \"classId\" : [ 1 , 2 , 3 ], \"comment\" : \"Receiver monitor\" } ] }",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Stereo audio gain with nested block",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Stereo%20audio%20gain%20with%20nested%20block/",
+      "text": "Stereo audio gain with nested block Stereo audio gain with nested block Stereo audio gain with nested block - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Stereo audio gain with nested block The following is a blockspec for a two-channel audio gain control block that includes a nested block that adjusts individual channel gains. This example also shows the use of the speclib library features, which include the specLibId property of the block member, and the Libraries table elsewhere in the document. The block diagrams for the main block and nested block are as follows: Here is the blockspec for the outer block, StereoGainBlock : { \"specId\" : \"StereoGainBlock\" , \"specVersion\" : \"1.0.0\" , \"specDescription\" : \"Stereo gain block spec\" , \"members\" : [ { \"role\" : \"stereoGain\" , \"specId\" : \"ChannelGainBlock\" , \"specVersion\" : \"1.0.0\" , \"comment\" : \"NcBlock\" , \"classId\" : [ 1 , 1 ], \"ports\" : [ { \"role\" : \"stereo_gain_input_1\" , \"direction\" : \"input\" }, { \"role\" : \"stereo_gain_input_2\" , \"direction\" : \"input\" }, { \"role\" : \"stereo_gain_output_1\" , \"direction\" : \"output\" }, { \"role\" : \"stereo_gain_output_2\" , \"direction\" : \"output\" } ], \"constraints\" : [ { \"path\" : [ \"left\" ], \"propertyId\" : { \"level\" : 5 , \"index\" : 1 }, \"comment\" : \"NcGain gainValue property\" , \"minimum\" : -20 , \"maximum\" : 0 }, { \"path\" : [ \"right\" ], \"propertyId\" : { \"level\" : 5 , \"index\" : 1 }, \"comment\" : \"NcGain gainValue property\" , \"minimum\" : -20 , \"maximum\" : 0 } ] }, { \"role\" : \"masterGain\" , \"classId\" : [ 1 , 2 , 1 , 1 , 1 ], \"ports\" : [ { \"role\" : \"input_1\" , \"direction\" : \"input\" }, { \"role\" : \"input_2\" , \"direction\" : \"input\" }, { \"role\" : \"output_1\" , \"direction\" : \"output\" }, { \"role\" : \"output_2\" , \"direction\" : \"output\" } ], \"constraints\" : [ { \"path\" : null , \"propertyId\" : { \"level\" : 5 , \"index\" : 1 }, \"comment\" : \"NcGain gainValue property\" , \"minimum\" : -50 , \"maximum\" : 10 } ] } ], \"ports\" : [ { \"role\" : \"block_input_1\" , \"direction\" : \"input\" }, { \"role\" : \"block_input_2\" , \"direction\" : \"input\" }, { \"role\" : \"block_output_1\" , \"direction\" : \"output\" }, { \"role\" : \"block_output_2\" , \"direction\" : \"output\" } ], \"signalPaths\" : [ { \"source\" : { \"owner\" : [], \"role\" : \"block_input_1\" }, \"sink\" : { \"owner\" : [ \"stereoGain\" ], \"role\" : \"stereo_gain_input_1\" }, \"role\" : \"owner_1\" }, { \"source\" : { \"owner\" : [ \"stereoGain\" ], \"role\" : \"stereo_gain_output_1\" }, \"sink\" : { \"owner\" : [ \"masterGain\" ], \"role\" : \"input_1\" }, \"role\" : \"owner_2\" }, { \"source\" : { \"owner\" : [ \"masterGain\" ], \"role\" : \"output_1\" }, \"sink\" : { \"owner\" : [], \"role\" : \"block_output_1\" }, \"role\" : \"owner_5\" }, { \"source\" : { \"owner\" : [], \"role\" : \"block_input_2\" }, \"sink\" : { \"owner\" : [ \"stereoGain\" ], \"role\" : \"stereo_gain_input_1\" }, \"role\" : \"owner_3\" }, { \"source\" : { \"owner\" : [ \"stereoGain\" ], \"role\" : \"stereo_gain_output_2\" }, \"sink\" : { \"owner\" : [ \"masterGain\" ], \"role\" : \"input_2\" }, \"role\" : \"owner_4\" }, { \"source\" : { \"owner\" : [ \"masterGain\" ], \"role\" : \"output_2\" }, \"sink\" : { \"owner\" : [], \"role\" : \"block_output_2\" }, \"role\" : \"owner_6\" } ] } Here is the blockspec for the inner gain block, ChannelGainBlock : { \"specId\" : \"ChannelGainBlock\" , \"specVersion\" : \"1.0.0\" , \"specLibId\" : \"basicAudio\" , \"specDescription\" : \"Two-channel audio gain control\" , \"ports\" : [ { \"role\" : \"block_input_1\" , \"direction\" : \"input\" }, { \"role\" : \"block_input_2\" , \"direction\" : \"input\" }, { \"role\" : \"block_output_1\" , \"direction\" : \"output\" }, { \"role\" : \"block_output_2\" , \"direction\" : \"output\" } ], \"signalFlows\" : [ { \"source\" : { \"owner\" : [], \"role\" : \"block_input_1\" }, \"sink\" : { \"owner\" : [ \"leftGain\" ], \"role\" : \"input_1\" } }, { \"source\" : { \"owner\" : [ \"leftGain\" ], \"role\" : \"output_1\" }, \"sink\" : { \"owner\" : [], \"role\" : \"block_output_1\" } } ], \"members\" : [ { \"role\" : \"left\" , \"comment\" : \"NcGain\" , \"classId\" : [ 1 , 2 , 1 , 1 , 1 ], \"ports\" : [ { \"role\" : \"input_1\" , \"direction\" : \"input\" }, { \"role\" : \"output_1\" , \"direction\" : \"output\" } ] }, { \"role\" : \"right\" , \"classId\" : [ 1 , 2 , 1 , 1 , 1 ], \"comment\" : \"NcGain\" , \"ports\" : [ { \"role\" : \"input_1\" , \"direction\" : \"input\" }, { \"role\" : \"output_1\" , \"direction\" : \"output\" } ] } ] } Here is the libraries collection that goes at the beginning of the blockspec file and decodes library spec IDs mentioned in the blockspec: { \"libraries\" : [ { \"reference\" : \"stereoAudio\" , \"location\" : \"<AMWA repo link>\" }, { \"reference\" : \"basicAudio\" , \"location\" : \"<AMWA repo link>\" } ] }",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "Typical device design workflow",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/Typical%20device%20design%20workflow/",
+      "text": "Typical device design workflow Typical device design workflow Typical device design workflow - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content Typical device design workflow Using blockspecs, a typical device design workflow would be as follows: From the product functional specification, identify sets of control functions that can logically be grouped into blocks. These sets of functions might be: Replicated in the device, as for example in a mixing console; Already existing in other products (or expected to exist in future products); Industry standard protocol interfaces. Create or find usable blockspec definitions. Such definitions might be: Defined in public blockspec libraries; Defined in private (i.e. corporate) blockspec libraries; Custom-built for the product being designed. If necessary, modify found blockspecs to fit requirements exactly. Create a new blockspec ( root blockspec ) for the device's root block that: Instantiates all the component blockspecs as required, and Defines individual control objects as needed (e.g. a power on/off control). Use the completed root blockspec to drive manual or automatic code generation processes to implement the device's NCA control API.",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "README",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/images/",
+      "text": "README README README - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content README This directory is for images used in documentation",
+      "repository": "AMWA-TV/ms-05-03"
+    },
+    {
+      "title": "[Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs",
+      "url": "https://specs.amwa.tv/new/ms-05-03/latest/",
+      "text": "[Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs What does it do? Why does it matter? How does it work? Other specifications in the suite Getting started [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs - [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs Skip to content [Work In Progress] AMWA MS-05-03 NMOS Control Blockspecs This repository holds the source for this Specification, part of the family of Networked Media Open Specifications from the Advanced Media Workflow Association What does it do? Describes the specification for creating NMOS Control Blockspecs. Why does it matter? Sets out the rules and requirements for creating Blockspec files which can be used by device manufacturers for implementation. How does it work? Describes a uniform way of specifying block functionality and constraints for standardising feature sets. Other specifications in the suite MS-05-01 NMOS Control Architecture MS-05-02 NMOS Control Framework IS-12 NMOS Control Protocol Getting started There is more information about the NMOS Specifications and their GitHub repos at https://specs.amwa.tv/nmos .",
+      "repository": "AMWA-TV/ms-05-03"
+    }
+  ]
+}
