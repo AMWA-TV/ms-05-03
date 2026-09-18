@@ -1,7 +1,8 @@
 # \[Work In Progress\] AMWA MS-05-03 NMOS Control Blockspecs
 
 [![Lint Status](https://github.com/AMWA-TV/ms-05-03/workflows/Lint/badge.svg)](https://github.com/AMWA-TV/ms-05-03/actions?query=workflow%3ALint)
-[![Render Status](https://github.com/AMWA-TV/ms-05-03/workflows/Render/badge.svg)](https://github.com/AMWA-TV/ms-05-03/actions?query=workflow%3ARender)
+[![Zensical Render Status](https://github.com/AMWA-TV/ms-05-03/actions/workflows/docs.yml/badge.svg)](https://github.com/AMWA-TV/ms-05-03/actions/workflows/docs.yml)
+[![Legacy Render Status](https://github.com/AMWA-TV/ms-05-03/workflows/Render/badge.svg)](https://github.com/AMWA-TV/ms-05-03/actions?query=workflow%3ARender)
 
 This repository holds the source for this Specification, part of the family of [Networked Media Open Specifications](https://specs.amwa.tv/nmos) from the [Advanced Media Workflow Association](https://amwa.tv)
 
@@ -9,15 +10,15 @@ This repository holds the source for this Specification, part of the family of [
 
 ### What does it do?
 
-Describes the specification for creating NMOS Control Blockspecs.
+- Describes the specification for creating NMOS Control Blockspecs.
 
 ### Why does it matter?
 
-Sets out the rules and requirements for creating Blockspec files which can be used by device manufacturers for implementation.
+- Sets out the rules and requirements for creating Blockspec files which can be used by device manufacturers for implementation.
 
 ### How does it work?
 
-Describes a uniform way of specifying block functionality and constraints for standardising feature sets.
+- Describes a uniform way of specifying block functionality and constraints for standardising feature sets.
 
 ### Other specifications in the suite
 
