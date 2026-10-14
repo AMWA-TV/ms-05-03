@@ -1,54 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Introduction/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/404/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Blocks/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Base%20root%20blockspec/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Root%20block/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Blocks/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Signal%20paths/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Blockspec%20contents/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Inheritance/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Blockspec%20file%20format/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Blockspec%20library%20references/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Blockspec%20library%20references/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Blockspec%20file%20format/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Collection%20property%20specifications/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Blockspec%20contents/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Header%20data/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Header%20data/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Inheritance/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Collection%20property%20specifications/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Introduction/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Ports/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Member%20specifications/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Member%20specifications/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Ports/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Typical%20device%20design%20workflow/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Root%20block/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Base%20root%20blockspec/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Signal%20paths/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Simple%20NMOS%20receiver%20monitor/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Simple%20NMOS%20receiver%20monitor/</loc>
       </url>
       <url>
-        <loc>https://specs.amwa.tv/new/ms-05-03/v1.0-dev/Stereo%20audio%20gain%20with%20nested%20block/</loc>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Stereo%20audio%20gain%20with%20nested%20block/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/Typical%20device%20design%20workflow/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/images/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkAuthorityKey/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBase/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockMemberBlock/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockMemberConstraint/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockMemberConstraintEnumOption/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockMemberConstraintFixedValue/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockMemberConstraint_Enum/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockMemberConstraint_Number/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockMemberConstraint_String/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockMemberGeneric/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockspec/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkBlockspecsFile/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkClassIndex/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkLibDirectoryEntry/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkName/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkPort/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkPortReference/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkRolePath/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkSignalPath/</loc>
+      </url>
+      <url>
+        <loc>https://specs.amwa.tv/ms-05-03/v1.0-dev/v1.0-dev/schemas/bkVersionCode/</loc>
       </url>
 </urlset>

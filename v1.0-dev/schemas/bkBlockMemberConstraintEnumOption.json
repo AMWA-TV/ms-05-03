@@ -1,0 +1,25 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "An option value of a constraint item enum",
+   "title": "Enum option value",
+   "$ref": "bkBase.json",
+   "properties": {
+      "name": {
+         "type": "string",
+         "description": "Name of the enum option"
+      },
+      "value": {
+         "type": "integer",
+         "description": "Numeric value associated with the enum option"
+      },
+      "description": {
+         "type": "string",
+         "description": "Detailed description of the enum option"
+      }
+   },
+   "required": [
+      "name",
+      "value"
+   ]
+}

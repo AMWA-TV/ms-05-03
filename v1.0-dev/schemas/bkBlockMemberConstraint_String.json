@@ -1,0 +1,17 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Constraint specification for a property of type string",
+   "title": "String constraint",
+   "$ref": "bkBase.json",
+   "properties": {
+      "maxCharacters": {
+         "description": "Maximum characters allowed.",
+         "type": "number"
+      },
+      "pattern": {
+         "description": "Regex pattern.",
+         "type": "string"
+      }
+   }
+}

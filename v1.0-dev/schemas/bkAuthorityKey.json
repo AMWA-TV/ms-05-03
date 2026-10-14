@@ -1,0 +1,10 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "description": "Authority key that identifies owner of a proprietary class subtree. Range = FF000000h ... FFFFFFFFh",
+    "title": "Authority key",
+    "type": "number",
+    "constraints": {
+        "minimum": "-16777216",
+        "maximum": "-1"
+    }
+}

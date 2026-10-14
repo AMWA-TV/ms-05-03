@@ -1,0 +1,12 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Base schema definition",
+   "title": "Base schema definition",
+   "properties": {
+      "comment": {
+         "description": "Comment property for adding explanatory notes",
+         "type": "string"
+      }
+   }
+}

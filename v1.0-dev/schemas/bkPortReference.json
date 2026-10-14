@@ -1,0 +1,17 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "description": "A blockSpec Port reference descriptor",
+    "title": "BlockSpec Port Reference",
+    "$ref": "bkBase.json",
+    "properties": {
+        "owner": {
+            "description": "Role path of owning object",
+            "$ref": "bkRolePath.json"
+        },
+        "role": {
+            "description": "Unique role of port in the object that owns it.",
+            "type": "string"
+        }
+    }
+}

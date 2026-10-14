@@ -1,0 +1,19 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Constraint specification for a fixed value",
+   "title": "Fixed value constraint",
+   "properties": {
+      "value": {
+         "description": "Fixed value.",
+         "type": [
+            "number",
+            "string",
+            "boolean",
+            "object",
+            "array",
+            "null"
+         ]
+      }
+   }
+}

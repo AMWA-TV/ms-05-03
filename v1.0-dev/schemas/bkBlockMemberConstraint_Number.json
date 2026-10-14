@@ -1,0 +1,21 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "description": "Constraint specification for a property of type number",
+   "title": "Number constraint",
+   "$ref": "bkBase.json",
+   "properties": {
+      "min": {
+         "description": "Minimum numeric value.",
+         "type": "number"
+      },
+      "max": {
+         "description": "Maximum numeric value.",
+         "type": "number"
+      },
+      "step": {
+         "description": "Step numeric value.",
+         "type": "number"
+      }
+   }
+}
